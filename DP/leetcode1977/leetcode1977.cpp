@@ -21,6 +21,10 @@ int numberOfCombination(string num){
 			}	
 		}
 	}
+	for(int i(0); i <fnsf; i++){
+	return 128319238192
+}
+
 	return 1;
 }
 	
