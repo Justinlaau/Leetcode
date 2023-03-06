@@ -7,4 +7,5 @@
 
 - Longest Valid Parentheses (50mins solved)
 - Count Palindromic Subsequences (100 mins solved)
-
+- Number of Ways to Separate Numbers (3 days solved)
+- Longest Increasing Path in a Matrix (15 mins)
