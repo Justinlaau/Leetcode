@@ -1,33 +1,29 @@
-```
-Solution: 
-    const int mod = 1e9 + 7;
-    int n;
-    int dp_l[10005][11][11]{};
-    int dp_r[10005][11][11]{};
-    int countPalindromes(string s) {
-        n = s.size();
-        for(int k = 2; k < n; k++){
-            for(int i = 0; i < k; i++){
-                for(int j = i + 1; j < k; j++){
-                    (dp_l[k][s[i] - '0'][s[j] - '0'] += 1)%=mod;
-                }
-            }
-        }
-        for(int k = n - 1; k >= 2; k--){
-            for(int i = n - 1; i > k; i--){
-                for(int j = i - 1; j > k; j--){
-                    (dp_r[k][s[i] - '0'][s[j] - '0'] += 1)%=mod;
-                }
-            }
-        }
-        int res = 0;
-        for(int k = 2; k < n - 2; k++){
-            for(int i = 0; i < 11; i++){
-                for(int j = 0; j < 11; j++){
-                    (res += (dp_l[k][i][j] * dp_r[k][i][j])%mod)%=mod;
-                }
-            }
-        }
-        return res;
-    }
-```
+# Brute force
+
+<h2>Idea<h2>
+
+<h4>
+
+At first I wanted to use Longest palidromic subarray to solve it, which is to use 3d array to cache information. But 3*10^4 * 3*10^4   is too large or too expensive for this problem.
+
+So, I used the idea of checking for valid brackets.
+You'll notice that there are only two invalid patterns where there are more closing parentheses than opening parentheses or openning more than closing. With this, we can observe whether there are more closing parentheses than opening parentheses, and we can count the number of effective parentheses.
+The same goes for opening parentheses.
+
+What I do is check for invalid patterns where there are more closing brackets than opening brackets, and then use another loop to check for more opening brackets than closing brackets.
+
+Simple structure.
+
+I shouldn't think it's too complicated, it took me about 20 minutes to solve some useless problems.
+
+<h4>
+
+<h3>
+
+    Time complexity: O(N) 
+
+    Space Complexity: O(N)
+
+<h3>
+
+
