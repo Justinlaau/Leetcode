@@ -3,12 +3,26 @@
 <h2>Idea<h2>
 
 <h4>
-<h4>
 
-<h3>
+```
+The question only require us to find palidromic susequence with length with 5.
+
+{i, j, k, j, i}
+
+from the above example, we know if we can compute the possibilities of {i, j} subsequences before k, we can multiple to the possibilities of {j, i} after k, to get the combinations
+
+With this idea, we can find a brute force method, loop over the string, and set the current idx to be k, and use 2 for loop to find all the possibilies of all number, store the answer in dp_l, and do the same thing with after k, store the answer in dp_r.
+
+return value sum(dp[k][i][j] * dp[k][j][i])
+
+
+
+
+
     Time complexity: O(N^3) <br>
     Space Complexity: O(N)
-<h3>
+```
+<h4>
 
 ```
 Solution: 
@@ -46,3 +60,16 @@ Solution:
 
 # How to optimize the solution? 
 
+<h4>
+
+    you would notice that finding combination of {i, j} is not difficult at all.
+    if we know the occurences of each digit before j.
+    for example, "12141236" 
+                         ^
+                         j
+    
+    if we know 1 occurs 3 times, then {1, 6} is 3, {2, 6} is 2, the combination of {i, j} depends on the occurences of i.
+
+    so, we use a prefix sum to store the occurences of each digits in certain position. 
+
+<h4>
