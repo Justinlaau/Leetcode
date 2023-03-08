@@ -26,10 +26,13 @@ int longestPalindromeSubseq(string s) {
 The only difference is that we are now given two string.
 We have to pick at least one char from both array to form a palidrom.
 
-So, the idea is to combine two string to be one single string, and use the longest palidromic subsequence method to find the maximum palidrome we can construct.
+So, the idea is to combine two string to be one single string, and use the longest palidromic 
+subsequence method to find the maximum palidrome we can construct.
 
 But how to ensure that we have picked at least one char from both string.
-Try to think about the dp state, our dp state is in the range of i to j, the longest palidrome we get, then if i and j is located in same string, which means this palidrome haven't used another string to construct the answer.
+Try to think about the dp state, our dp state is in the range of i to j, the longest palidrome we get, 
+then if i and j is located in same string, which means this palidrome haven't used another string to 
+construct the answer.
 
 By this, we know making few changes in the above code can solve this question easily.
 

@@ -33,3 +33,11 @@ and blew my mind.
 - Number of Beautiful Partitions (1.5 hrs)
 - Maximum Deletions on String
 - Decode Ways II 
+
+# Day 3
+- Count Increasing Quadruplets
+- Partition Array Into Two Arrays to Minimize Sum Difference
+- Maximum Total Beauty of the Gardens
+- Subsequence With the Minimum Score
+- Last Substring in Lexicographical Order
+- Closest Subsequence Sum
