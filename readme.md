@@ -15,9 +15,14 @@
 ```
 Reflection
 
-I watched a youtube video called blackbox method, do not focus on the detail first, make some assumptions, like if I can solve this subproblem what should I do next. I now can narrow down the compleixty of the problem. However, the speed is still under the bar, maybe I could improve by doing more and more questions.
+I watched a youtube video called blackbox method, do not focus on the detail 
+first, make some assumptions, like if I can solve this subproblem what should 
+I do next. I now can narrow down the compleixty of the problem. However, the 
+speed is still under the bar, maybe I could improve by doing more and more questions.
 
--> Number of Ways to Separate Numbers is most difficult one, I have ever done. Many technics such as suffix array and prefix sum of the dp subproblem, are very useful and blew my mind. 
+-> Number of Ways to Separate Numbers is most difficult one, I have ever done. Many 
+technics such as suffix array and prefix sum of the dp subproblem, are very useful 
+and blew my mind. 
 ```
 
 # Day 2
