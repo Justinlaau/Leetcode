@@ -9,15 +9,15 @@
 - Count Palindromic Subsequences (100 mins solved)
 - Number of Ways to Separate Numbers (8hrs solved)
 - Longest Increasing Path in a Matrix (15 mins)
-- Maximum Sum of 3 Non-Overlapping Subarrays (2.5hrs solved) (OMG this question so easy, i stucked at a little bug, fk me)
+- Maximum Sum of 3 Non-Overlapping Subarrays (2.5hrs solved) (OMG this question is so easy, i stucked at a little bug, fk me)
 - Wildcard Matching (45mins) (forgot to initilize the dp array with edge cases)
 
 ```
 Reflection
 
-I watched a youtube video called blackbox method, do not focus on the detail 
+I watched a youtube video talks about blackbox method, do not focus on the detail 
 first, make some assumptions, like if I can solve this subproblem what should 
-I do next. I now can narrow down the compleixty of the problem. However, the 
+I do next. I now can narrow down the compleixty of a problem. However, the 
 speed is still under the bar, maybe I could improve by doing more and more questions.
 
 -> Number of Ways to Separate Numbers is most difficult one, I have ever done. Many 
@@ -29,8 +29,8 @@ and blew my mind.
 
 - Number of Submatrices That Sum to Target + Subarray Sum Equals K(3hr solved)
 - Maximize Palindrome Length From Subsequences + Longest Palindromic Subsequence(45mins solved)
-- Burst Balloons 
-- Number of Beautiful Partitions (1.5 hrs)
+- Burst Balloons (30mins)
+- Number of Beautiful Partitions (5 hrs)
 - Maximum Deletions on String
 - Decode Ways II 
 
