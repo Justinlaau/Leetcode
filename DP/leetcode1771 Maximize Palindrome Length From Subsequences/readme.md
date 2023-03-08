@@ -1,33 +1,37 @@
 ```
-Solution: 
-    const int mod = 1e9 + 7;
-    int n;
-    int dp_l[10005][11][11]{};
-    int dp_r[10005][11][11]{};
-    int countPalindromes(string s) {
-        n = s.size();
-        for(int k = 2; k < n; k++){
-            for(int i = 0; i < k; i++){
-                for(int j = i + 1; j < k; j++){
-                    (dp_l[k][s[i] - '0'][s[j] - '0'] += 1)%=mod;
-                }
+This is the solution of longest palidromic subsequence.
+
+int longestPalindromeSubseq(string s) {
+    int n = s.size();
+    int dp[n + 1][n + 1];
+    memset(dp, 0, sizeof(dp));
+    for(int len = 1; len <= n; len++){
+        for(int i = 0; i < n - len + 1; i++){
+            int j = i + len- 1;
+            if(len == 1){
+                dp[i][i] = 1;
+                continue;
+            }
+            if(s[i] == s[j]){
+                dp[i][j] = dp[i + 1][j - 1]+ 2;
+            }else{
+                dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]);
             }
         }
-        for(int k = n - 1; k >= 2; k--){
-            for(int i = n - 1; i > k; i--){
-                for(int j = i - 1; j > k; j--){
-                    (dp_r[k][s[i] - '0'][s[j] - '0'] += 1)%=mod;
-                }
-            }
-        }
-        int res = 0;
-        for(int k = 2; k < n - 2; k++){
-            for(int i = 0; i < 11; i++){
-                for(int j = 0; j < 11; j++){
-                    (res += (dp_l[k][i][j] * dp_r[k][i][j])%mod)%=mod;
-                }
-            }
-        }
-        return res;
     }
+    return dp[0][n - 1];
+}
+
+
+The only difference is that we are now given two string.
+We have to pick at least one char from both array to form a palidrom.
+
+So, the idea is to combine two string to be one single string, and use the longest palidromic subsequence method to find the maximum palidrome we can construct.
+
+But how to ensure that we have picked at least one char from both string.
+Try to think about the dp state, our dp state is in the range of i to j, the longest palidrome we get, then if i and j is located in same string, which means this palidrome haven't used another string to construct the answer.
+
+By this, we know making few changes in the above code can solve this question easily.
+
+When we need to count the answer, we just check if i and j in different string.
 ```

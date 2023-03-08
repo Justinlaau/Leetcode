@@ -1,48 +1,11 @@
-# Brute force
-
-<h2>Idea<h2>
-
-<h4>
-<h4>
-
-<h3>
-    Time complexity: O(N^3) <br>
-    Space Complexity: O(N)
-<h3>
+# Idea
 
 ```
-Solution: 
-    const int mod = 1e9 + 7;
-    int n;
-    int dp_l[10005][11][11]{};
-    int dp_r[10005][11][11]{};
-    int countPalindromes(string s) {
-        n = s.size();
-        for(int k = 2; k < n; k++){
-            for(int i = 0; i < k; i++){
-                for(int j = i + 1; j < k; j++){
-                    (dp_l[k][s[i] - '0'][s[j] - '0'] += 1)%=mod;
-                }
-            }
-        }
-        for(int k = n - 1; k >= 2; k--){
-            for(int i = n - 1; i > k; i--){
-                for(int j = i - 1; j > k; j--){
-                    (dp_r[k][s[i] - '0'][s[j] - '0'] += 1)%=mod;
-                }
-            }
-        }
-        int res = 0;
-        for(int k = 2; k < n - 2; k++){
-            for(int i = 0; i < 11; i++){
-                for(int j = 0; j < 11; j++){
-                    (res += (dp_l[k][i][j] * dp_r[k][i][j])%mod)%=mod;
-                }
-            }
-        }
-        return res;
-    }
-```
+we have done many grid and maze problem before, for example, from (1,1) to (n, m) shortest path...
+Actually, they are the same as this question. 
+The only difference place is where to start and where to end.
 
-# How to optimize the solution? 
+In fact the recursion would help us to stop, if there were no any near point smaller than (x, y).
+we can try to start with any point, you would notice that the time complexity is pretty high, because some of the paths you went before and you went it again and again. Start with different point wouldn't make a point's accessible length larger or shorter, so, we cache the point's accessible length. It significantly reduce our time complexity.
+```
 
