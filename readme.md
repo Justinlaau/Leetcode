@@ -41,3 +41,19 @@ and blew my mind.
 - Subsequence With the Minimum Score
 - Last Substring in Lexicographical Order
 - Closest Subsequence Sum
+
+# Day 4
+
+- Split Array With Same Average
+- Count the Number of Ideal Arrays
+- Regular Expression Matching
+- Parallel Courses II
+- Largest Multiple of Three
+
+# Day 5
+
+- Number of Great Partitions
+- Kth Ancestor of a Tree Node
+- Palindrome Partitioning II
+- The Score of Students Solving Math Expression
+- Number of Digit One
