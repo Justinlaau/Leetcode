@@ -31,8 +31,8 @@ and blew my mind.
 - Maximize Palindrome Length From Subsequences + Longest Palindromic Subsequence(45mins solved)
 - Burst Balloons (30mins)
 - Number of Beautiful Partitions (5 hrs)
-- Maximum Deletions on String
-- Decode Ways II 
+- Maximum Deletions on String (30mins)
+- Decode Ways II (40mins)
 
 # Day 3
 - Count Increasing Quadruplets
