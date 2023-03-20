@@ -35,9 +35,9 @@ and blew my mind.
 - Decode Ways II (40mins)
 
 # Day 3
-- Count Increasing Quadruplets
-- Partition Array Into Two Arrays to Minimize Sum Difference
-- Maximum Total Beauty of the Gardens
+- Count Increasing Quadruplets (3 hrs)
+- Partition Array Into Two Arrays to Minimize Sum Difference 
+- Maximum Total Beauty of the Gardens (3 hrs)
 - Subsequence With the Minimum Score
 - Last Substring in Lexicographical Order
 - Closest Subsequence Sum
