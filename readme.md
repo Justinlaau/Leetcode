@@ -38,8 +38,8 @@ and blew my mind.
 - Count Increasing Quadruplets (3 hrs)
 - Partition Array Into Two Arrays to Minimize Sum Difference 
 - Maximum Total Beauty of the Gardens (3 hrs)
-- Subsequence With the Minimum Score
-- Last Substring in Lexicographical Order
+- Subsequence With the Minimum Score (12hrs) 
+- Last Substring in Lexicographical Order 
 - Closest Subsequence Sum
 
 # Day 4
