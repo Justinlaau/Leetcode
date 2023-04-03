@@ -22,7 +22,25 @@ The answer must have max character at the begining and the longest length<br>
 <li> step1: find the first occurences of max character, we mark the index as pos.
 <li> step2: find the next occurences of max character's index cloest to the pos.
 <li> step3: use a while to do comparasion
+<li> repeat all these steps until all the maxChar have been looped once
 
 ```
+//mark the index first
+if(s[cur] == maxChar){
+    int firstString = pos + 1, secondString = cur + 1;
+    while(firstString < cur && secondString < n){
+        if(s[firstString] < s[secondString]){
+            pos = cur;
+            cur = cur + 1;
+            break;
+        }else if(s[firstString] > s[secondString]){
+            cur = secondString + 1;
+            break;
+        }else{
+            firstString++;
+            secondString++;
+        }
+    }
+}
 
 ```

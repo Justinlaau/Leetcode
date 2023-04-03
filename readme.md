@@ -40,7 +40,7 @@ and blew my mind.
 - Maximum Total Beauty of the Gardens (3 hrs)
 - Subsequence With the Minimum Score (12hrs) 
 - Last Substring in Lexicographical Order (30mins)
-- Closest Subsequence Sum
+- Closest Subsequence Sum (18mins)
 
 # Day 4
 
