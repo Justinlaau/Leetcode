@@ -39,7 +39,7 @@ and blew my mind.
 - Partition Array Into Two Arrays to Minimize Sum Difference 
 - Maximum Total Beauty of the Gardens (3 hrs)
 - Subsequence With the Minimum Score (12hrs) 
-- Last Substring in Lexicographical Order 
+- Last Substring in Lexicographical Order (30mins)
 - Closest Subsequence Sum
 
 # Day 4
