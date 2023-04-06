@@ -33,15 +33,29 @@ and blew my mind.
 - Number of Beautiful Partitions (5 hrs)
 - Maximum Deletions on String (30mins)
 - Decode Ways II (40mins)
+```
+Reflection
 
+Many question used suffix and prefix idea to optimize the complexity,
+and there is a pattern, when you find out the question is three pass like question, 
+you can use prefix sum and suffix sum, to reduce an O(N) complexity,
+the most interesting question is Number of Submatrices That Sum to Target + Subarray
+Sum Equals K, when you solve the same question in 1d array, and use the same idea in 2d
+array, this conversion is enlightened.
+```
 # Day 3
 - Count Increasing Quadruplets (3 hrs)
-- Partition Array Into Two Arrays to Minimize Sum Difference 
+- Partition Array Into Two Arrays to Minimize Sum Difference (15mins)
 - Maximum Total Beauty of the Gardens (3 hrs)
 - Subsequence With the Minimum Score (12hrs) 
 - Last Substring in Lexicographical Order (30mins)
 - Closest Subsequence Sum (18mins)
+```
+Reflection
 
+I can say i mastered the idea of meet in middle and bitmask, many question in this
+problem set can be transferred to two sum problem, which is very smart and clear.
+```
 # Day 4
 
 - Split Array With Same Average
