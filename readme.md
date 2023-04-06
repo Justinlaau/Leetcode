@@ -58,7 +58,7 @@ problem set can be transferred to two sum problem, which is very smart and clear
 ```
 # Day 4
 
-- Split Array With Same Average
+- Split Array With Same Average (1hr)
 - Count the Number of Ideal Arrays
 - Regular Expression Matching
 - Parallel Courses II
