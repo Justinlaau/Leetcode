@@ -5,6 +5,7 @@ int numSubmatrixSumTarget(vector<vector<int>>& nums, int target) {
         vector<int> temp(m, 0);
         for(int j = i; j < n; j++){
             map<int, int> cnt;
+            //number itself should count 1
             cnt[0] = 1;
             int iSum = 0;
             for(int k = 0; k < m; k++){
