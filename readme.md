@@ -61,7 +61,7 @@ problem set can be transferred to two sum problem, which is very smart and clear
 - Split Array With Same Average (1hr)
 - Count the Number of Ideal Arrays (5hrs)
 - Regular Expression Matching
-- Parallel Courses II
+- Parallel Courses II (I cannot solve this, i used greedy, but this is NP problem, when i knew this is a brute force problem, i just used 15mins to solve)
 - Largest Multiple of Three
 
 # Day 5

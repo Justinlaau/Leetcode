@@ -4,7 +4,7 @@ public:
         int N = nums.size(), SUM = accumulate(nums.begin(), nums.end(), 0);
 
         //we dont want floating point here
-        // a - SUM/N => a*N - SUM -> would not affect the average
+        // a * N - sum -> the arr(nums) = 0
         for(auto & a : nums){
             a = a * N - SUM;
         }
@@ -22,10 +22,12 @@ public:
             for(int i = 0; i < arrB.size(); i++){
                 if((1 << i) & bitmask)sum+=arrB[i];
             } 
+            //found a sequence = 0 
             if(sum == 0)return 1;
             s.insert(sum);
         }
         int lsum = accumulate(arrA.begin(), arrA.end(), 0);
+        //now we try to find some element in a and some in b, that sums up 0, that also mean we found sequence = 0
         for(int bitmask = 1; bitmask < (1 << arrA.size()); bitmask++){
             int sum = 0;
             for(int i = 0; i < arrA.size(); i++){
